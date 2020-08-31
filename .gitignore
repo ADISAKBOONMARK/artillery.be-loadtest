@@ -1,2 +1,5 @@
 load-test/node_modules
 load-test/package-lock.json
+
+load-test/report/report.html
+load-test/report/report.json
