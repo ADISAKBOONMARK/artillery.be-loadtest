@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "artillery --output ./report/report.json run ./script/scenarios.yml && artillery report --output ./report/report.html ./report/report.json"
   },
   "author": "",
   "license": "ISC",

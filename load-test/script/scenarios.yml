@@ -1,0 +1,19 @@
+config:
+  target: "http://localhost:8000/images-server-be-webapi/v1.0.0"
+  phases:
+    - duration: 100
+      arrivalRate: 10
+
+scenarios:
+
+  - name: "/image/import"
+    flow:
+    - post:
+        url: "/image/import"
+        json:
+
+  - name: "/image/remove"
+    flow:
+    - post:
+        url: "/image/remove"
+        json:
