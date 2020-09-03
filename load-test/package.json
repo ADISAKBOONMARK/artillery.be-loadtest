@@ -1,0 +1,14 @@
+{
+  "name": "load-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "artillery --output ./report/report.json run ./script/scenarios.yml && artillery report --output ./report/report.html ./report/report.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "artillery": "^1.6.1"
+  }
+}
